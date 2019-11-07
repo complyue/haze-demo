@@ -17,7 +17,7 @@ import           Haze
 default (Text, Int, Double)
 
 
--- | a data structure defining a plottable interface
+-- | a type defining a plottable data interface
 data DataPack = DataPack {
     x :: ColumnData
     , ySin :: ColumnData
@@ -40,14 +40,13 @@ prepareData = do
     return $ DataPack { x, ySin, yCos }
 
 
--- | a plot specification, normally crafted in a module file
--- within the project underhood, not in web UI ad-hoc
+-- | a plot specification, normally crafted in a module file within
+-- the project underhood, not in web UI ad-hoc
 --
--- many packages can be composed for this, as long as they
+-- many packages can be composed for this purpose, as long as they
 -- all speak 'Haze.DSL'
 plotSinCos :: DataPack -> Plot ()
 plotSinCos DataPack { x, ySin, yCos } = do
-    -- let {x, ySin, yCos} = dp
     -- define axes to be synchronized
     sharedX <- defineAxis
     sharedY <- defineAxis
