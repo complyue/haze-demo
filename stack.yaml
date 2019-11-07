@@ -1,0 +1,38 @@
+resolver: lts-14.13
+
+packages:
+  - demo
+
+extra-deps:
+  # to use the version of hadui/haze checked out locally
+  - ../hadui/hadui
+  - ../haze/haze
+
+  # to use a version of hadui/haze from github
+  # - github: complyue/hadui
+  #   commit: stable
+  #   subdirs:
+  #     - hadui
+  # - github: complyue/haze
+  #   commit: stable
+  #   subdirs:
+  #     - haze
+
+compiler-check: match-exact
+
+# CAVEATS
+#
+#   binary distributions referenced following have NO support, checkout:
+#
+# https://gitlab.haskell.org/complyue/ghc-ife-bindist/blob/master/README.md
+
+ghc-variant: ife
+
+setup-info:
+  ghc:
+    macosx-custom-ife:
+      8.6.5:
+        url: "https://gitlab.haskell.org/complyue/ghc-ife-bindist/raw/master/ghc-8.6.5-x86_64-apple-darwin.tar.bz2"
+    linux64-custom-ife:
+      8.6.5:
+        url: "https://gitlab.haskell.org/complyue/ghc-ife-bindist/raw/master/ghc-8.6.5-x86_64-unknown-linux.tar.xz"
