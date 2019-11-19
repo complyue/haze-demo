@@ -1,0 +1,36 @@
+cabal-version: 2.4
+
+name:               haze-demo
+version:            0.1.0
+license:            BSD-3-Clause
+copyright:          2019 Compl Yue
+maintainer:         compl.yue@icloud.com
+author:             Compl Yue
+stability:          experimental
+homepage:           https://github.com/complyue/haze
+bug-reports:        https://github.com/complyue/haze/issues
+synopsis:           low-level Bokeh plotting for Hadui projects
+description:
+    Please see the README on Github at <https://github.com/complyue/haze>
+
+category:           Interactive,Plotting,Visualization,Development,Web,UI
+build-type:         Simple
+
+source-repository head
+  type: git
+  location: https://github.com/complyue/haze-demo
+
+library
+  exposed-modules:
+      PoC
+  other-modules:
+      Paths_haze_demo
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+    base
+    , rio
+    , hadui
+    , haze
+  default-language: Haskell2010
