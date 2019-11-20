@@ -5,7 +5,7 @@ packages:
 
 extra-deps:
   # to use a version of Hadui & Haze from github
-  # - url: https://github.com/complyue/hadui/archive/0.1.0.rc3.tar.gz
+  # - url: https://github.com/complyue/hadui/archive/0.1.0.2.tar.gz
   #   subdirs:
   #     - hadui
   # - url: https://github.com/complyue/haze/archive/0.1.0.rc0.tar.gz
