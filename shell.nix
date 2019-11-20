@@ -10,6 +10,6 @@ with (import (
   ../haze
 ) { });
 haskellPackages.shellFor {
-  packages = p: [ p.zlib ];
+  packages = p: [ p.zlib p.hadui ];
   nativeBuildInputs = [ pkgs.stack ];
 }
