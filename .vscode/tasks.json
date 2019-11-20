@@ -12,7 +12,7 @@
             },
             "label": "hadui-dev",
             "type": "shell",
-            "command": "cd ${workspaceRoot}; nix-shell --run hadui-dev"
+            "command": "cd ${workspaceRoot}; nix-shell --run 'stack build --exec hadui-dev'"
         }
     ]
 }
