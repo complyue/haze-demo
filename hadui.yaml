@@ -13,9 +13,8 @@
 # as a solution. wss client certificate may be a
 # reasonable choice.
 
-# this cfg file 'hadui.yaml' is located by Hadui besides
-# the nearest 'stack.yaml' up from cwd you run Hadui.
-# it uses `stack path --project-root` to locate the dir.
+# this cfg file 'hadui.yaml' is located as the nearest
+# one up from cwd you run Hadui.
 
 # by default, only the local interface is bound to listen
 # for Hadui ws connections, this hardens the arbitrary
